@@ -1032,3 +1032,32 @@ html{
     display: none;
   }
 }
+/* ===== MENU HEADER ===== */
+
+.nav{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav a{
+  text-decoration: none;
+  color: rgba(226,232,240,0.75);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: all .25s ease;
+}
+
+.nav a:hover{
+  color: #FFD600;
+  background: rgba(255,214,0,0.08);
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .nav{
+    display: none;
+  }
+}
