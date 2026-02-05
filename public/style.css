@@ -848,3 +848,53 @@ section h2{
     transform: none;
   }
 }
+/* ===== PASSO 5: CTA final premium ===== */
+
+.final-cta{
+  margin-top: 70px;
+  border-radius: 22px;
+  padding: 40px;
+  border: 1px solid rgba(255,214,0,0.20);
+  background: linear-gradient(135deg, rgba(255,214,0,0.10), rgba(2,6,23,0.55));
+  box-shadow: 0 26px 80px rgba(0,0,0,0.45);
+}
+
+.final-cta h2{
+  margin-bottom: 10px;
+}
+
+.cta-row{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.cta-trust{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgba(226,232,240,0.75);
+  font-weight: 600;
+  font-size: .92rem;
+}
+
+.cta-trust span{
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(2,6,23,0.35);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px){
+  .final-cta{
+    padding: 26px;
+  }
+  .cta-row{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-trust{
+    width: 100%;
+  }
+}
