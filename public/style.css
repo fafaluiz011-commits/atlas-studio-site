@@ -432,3 +432,7 @@ h2, h3, h4 { letter-spacing: -0.6px; }
   font-size: 0.86rem;
   margin-bottom: 14px;
 }
+.btn-primary{
+  font-weight: 900;
+  letter-spacing: .3px;
+}
