@@ -243,3 +243,48 @@ body{
   gap: 48px;
   align-items: center;
 }
+/* ===== FIX HERO PANEL SPACING (FORCE) ===== */
+.hero-panel{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-panel-title{
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.hero-panel-sub{
+  line-height: 1.35;
+}
+
+.hero-metrics{
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+  margin-top: 10px;
+}
+
+.metric{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  padding: 14px !important;
+  text-align: center !important;
+}
+
+.metric strong{
+  display: block !important;
+  font-size: 1.05rem !important;
+  line-height: 1.1 !important;
+}
+
+.metric span{
+  display: block !important;
+  font-size: 0.85rem !important;
+  line-height: 1.1 !important;
+  opacity: 0.8 !important;
+}
