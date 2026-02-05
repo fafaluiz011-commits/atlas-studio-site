@@ -641,3 +641,42 @@ h2, h3, h4 { letter-spacing: -0.6px; }
     to   { opacity: 1; transform: translateY(0);  filter: blur(0); }
   }
 }
+/* ===== REVEAL PREMIUM (leve e elegante) ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(6px);
+  transition: opacity .75s ease, transform .75s ease, filter .75s ease;
+  will-change: opacity, transform, filter;
+}
+
+/* deixa o HERO aparecer primeiro e mais rápido */
+.hero.reveal{
+  transition-duration: .55s;
+  transform: translateY(10px);
+  filter: blur(4px);
+}
+
+/* suporte moderno: animação por scroll (Chrome/Edge novos) */
+@supports (animation-timeline: view()){
+  .reveal{
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+
+    animation: reveal-in linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 28%;
+  }
+
+  @keyframes reveal-in{
+    from{ opacity: 0; transform: translateY(18px); filter: blur(6px); }
+    to{   opacity: 1; transform: translateY(0);  filter: blur(0); }
+  }
+}
+
+/* Acessibilidade: respeita quem desativa animação */
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity: 1; transform: none; filter: none; transition: none; animation: none; }
+}
