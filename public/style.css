@@ -436,3 +436,9 @@ h2, h3, h4 { letter-spacing: -0.6px; }
   font-weight: 900;
   letter-spacing: .3px;
 }
+.section-sub{
+  margin-top: -18px;
+  margin-bottom: 34px;
+  color: rgba(226,232,240,0.78);
+  max-width: 720px;
+}
