@@ -686,3 +686,37 @@ h2, h3, h4 { letter-spacing: -0.6px; }
   letter-spacing: -0.02em;
   margin: 12px 0 14px;
 }
+/* ===== PASSO 2: Hierarquia visual (H1 vs H2) ===== */
+
+.hero h1{
+  font-size: clamp(2.6rem, 4.2vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 14px 0 14px;
+}
+
+.hero p{
+  color: rgba(226,232,240,0.78);
+  max-width: 56ch;
+  margin: 0 0 22px;
+}
+
+/* Títulos de seção (H2) — menores que o H1 e com respiro */
+section h2{
+  font-size: clamp(1.85rem, 2.8vw, 2.35rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px;
+}
+
+/* Subtítulo padrão abaixo do H2 */
+.section-sub{
+  color: rgba(226,232,240,0.70);
+  max-width: 62ch;
+  margin: 0 0 26px;
+}
+
+/* Cria separação clara entre seções */
+.services, .pricing, .how, .faq{
+  padding: 110px 0;
+}
