@@ -1204,3 +1204,4 @@ nav.nav a:hover{
   background: rgba(255,214,0,0.08) !important;
   border-color: rgba(255,214,0,0.22) !important;
 }
+nav.nav a{ color: red !important; }
