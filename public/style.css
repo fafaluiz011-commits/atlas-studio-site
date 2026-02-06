@@ -1084,3 +1084,32 @@ html{
   background: rgba(255,214,0,0.08) !important;
   border-color: rgba(255,214,0,0.22) !important;
 }
+/* ===== FORÇAR ESTILO DO MENU (blindado) ===== */
+
+nav.nav{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+nav.nav a,
+nav.nav a:visited,
+nav.nav a:active{
+  text-decoration: none !important;
+  color: rgba(226,232,240,0.82) !important;
+  font-weight: 700 !important;
+  font-size: .95rem !important;
+  padding: 10px 12px !important;
+  border-radius: 999px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+nav.nav a:hover{
+  color: rgba(226,232,240,0.96) !important;
+  background: rgba(255,214,0,0.08) !important;
+  border-color: rgba(255,214,0,0.22) !important;
+}
