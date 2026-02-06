@@ -1061,3 +1061,26 @@ html{
     display: none;
   }
 }
+/* ===== FIX MENU (mesmo com tradutor ligado) ===== */
+
+.header .nav a,
+.header .nav a:visited,
+.header .nav a:active{
+  text-decoration: none !important;
+  color: rgba(226,232,240,0.78) !important;
+  font-weight: 700;
+  font-size: .95rem;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header .nav a:hover{
+  color: rgba(226,232,240,0.95) !important;
+  background: rgba(255,214,0,0.08) !important;
+  border-color: rgba(255,214,0,0.22) !important;
+}
