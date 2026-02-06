@@ -1167,3 +1167,40 @@ nav.nav a:hover{
   background: rgba(255,214,0,0.08) !important;
   border-color: rgba(255,214,0,0.22) !important;
 }
+/* ===== MENU: FIX ABSOLUTO (remove azul/underline) ===== */
+
+/* força qualquer link do menu */
+nav.nav a,
+nav.nav a:link,
+nav.nav a:visited,
+nav.nav a:hover,
+nav.nav a:active{
+  color: rgba(226,232,240,0.88) !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/* layout do menu */
+nav.nav{
+  display: flex !important;
+  gap: 22px !important;
+  align-items: center !important;
+}
+
+/* estilo premium */
+nav.nav a{
+  font-weight: 700 !important;
+  font-size: .95rem !important;
+  padding: 10px 12px !important;
+  border-radius: 999px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  transition: background .25s ease, border-color .25s ease, color .25s ease !important;
+}
+
+/* hover dourado */
+nav.nav a:hover{
+  color: #FFD600 !important;
+  background: rgba(255,214,0,0.08) !important;
+  border-color: rgba(255,214,0,0.22) !important;
+}
