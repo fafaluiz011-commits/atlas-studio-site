@@ -1139,3 +1139,31 @@ nav.nav a:hover{
   background: rgba(255,214,0,0.08) !important;
   border-color: rgba(255,214,0,0.22) !important;
 }
+/* ===== MENU HEADER (corrige azul do link) ===== */
+
+.header .nav a,
+.header .nav a:visited{
+  color: rgba(226,232,240,0.85) !important;
+  text-decoration: none !important;
+}
+
+.header .nav{
+  display: flex !important;
+  gap: 22px !important;
+  align-items: center !important;
+}
+
+.header .nav a{
+  padding: 10px 12px !important;
+  border-radius: 999px !important;
+  border: 1px solid transparent !important;
+  font-weight: 700 !important;
+  font-size: .95rem !important;
+  transition: all .25s ease !important;
+}
+
+.header .nav a:hover{
+  color: #FFD600 !important;
+  background: rgba(255,214,0,0.08) !important;
+  border-color: rgba(255,214,0,0.22) !important;
+}
