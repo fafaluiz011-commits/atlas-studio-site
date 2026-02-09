@@ -1238,3 +1238,20 @@ nav.nav a:hover{
   background: rgba(255,214,0,0.08) !important;
   border-color: rgba(255,214,0,0.22) !important;
 }
+/* MENU TOPO */
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: #bfc6d1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
