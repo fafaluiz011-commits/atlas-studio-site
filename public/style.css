@@ -1088,28 +1088,40 @@ html{
     display: none;
   }
 }
-.hero {
-  position: relative;
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.85)
-    ),
-    url("hero-bg.jpg") center / cover no-repeat;
-}
+
 .hero .container {
   position: relative;
   z-index: 2;
 }
-.hero {
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.75),
-      rgba(0,0,0,0.9)
-    ),
-    url("hero-bg.jpg") center / cover no-repeat;
-}
+
 .hero-panel {
   backdrop-filter: blur(8px);
   background: rgba(20, 20, 30, 0.6);
+}
+/* ===== HERO COM IMAGEM (FORÇADO) ===== */
+.hero{
+  position: relative;
+  overflow: hidden;
+
+  /* usa caminho ABSOLUTO (mais confiável no Vercel) */
+  background:
+    radial-gradient(900px 500px at 15% 10%, rgba(255,214,0,0.12), transparent 60%),
+    radial-gradient(900px 500px at 85% 15%, rgba(37,99,235,0.14), transparent 55%),
+    linear-gradient(180deg, rgba(2,6,23,0.92), rgba(0,0,0,0.92)),
+    url("/0_KUuQ2F78edYvC-21_fafa.jpg") center / cover no-repeat !important;
+}
+
+/* overlay extra pra dar contraste e ficar “premium” */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.55) 100%);
+  pointer-events:none;
+}
+
+/* garante o conteúdo acima do overlay */
+.hero .container{
+  position: relative;
+  z-index: 2;
 }
