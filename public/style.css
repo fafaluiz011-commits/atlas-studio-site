@@ -1255,3 +1255,21 @@ nav.nav a:hover{
 .nav a:hover {
   color: #ffffff;
 }
+/* ===== FIX MENU (links azuis/sublinhado) ===== */
+header .nav a,
+header .nav a:visited {
+  color: #bfc6d1 !important;
+  text-decoration: none !important;
+}
+
+header .nav a:hover,
+header .nav a:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+header .nav a:focus-visible {
+  outline: 2px solid rgba(255, 214, 0, 0.55);
+  outline-offset: 6px;
+  border-radius: 10px;
+}
