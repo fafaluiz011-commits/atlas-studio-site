@@ -1072,3 +1072,19 @@ html{
     ),
     url("hero-bg.jpg") center / cover no-repeat;
 }
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero {
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.9)
+    ),
+    url("hero-bg.jpg") center / cover no-repeat;
+}
+.hero-panel {
+  backdrop-filter: blur(8px);
+  background: rgba(20, 20, 30, 0.6);
+}
